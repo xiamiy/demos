@@ -353,4 +353,10 @@ public class DownloadTask {
 		this.sleepSeconds = sleepSeconds;
 	}
 
+   	 public void setProxyServer(String proxy, String proxyPort) {
+    	    // 设置代理服务器
+    	    System.getProperties().put("proxySet", "true");
+    	    System.getProperties().put("proxyHost", proxy);
+    	    System.getProperties().put("proxyPort", proxyPort);
+   	 }
 }

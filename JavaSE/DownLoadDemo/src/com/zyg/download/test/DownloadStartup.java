@@ -17,6 +17,7 @@ public class DownloadStartup {
 		String urlStr = "http://apache.freelamp.com/velocity/tools/1.4/velocity-tools-1.4.zip";
 //		String urlStr = "http://www.dianping.com/";
 		
+		downloadManager.setProxyServer("192.168.0.245", "3128");
 		downloadManager.setSleepSeconds(5);
 		String downladFileName = downloadManager.download(urlStr, encoding);
 		System.out.println("Download file is " + downladFileName + ".");		
